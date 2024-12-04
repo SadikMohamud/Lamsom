@@ -1,8 +1,6 @@
 /*
 
-Template 2098 Health
-
-http://www.tooplate.com/view/2098-health
+http://www.tooplate.com/
 
 */
 
@@ -196,7 +194,9 @@ http://www.tooplate.com/view/2098-health
     border-radius: 10px;
   }
   .news-thumb img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 10px 10px;
+    max-width: auto;
+    max-height: 50%;
   }
 
   .news-info {
@@ -235,6 +235,7 @@ http://www.tooplate.com/view/2098-health
     line-height: 0;
     margin: 0;
     padding: 0;
+   
   }
 
 
@@ -671,7 +672,7 @@ body.timeline {
   -----------------------------------------*/
 
   .team-thumb {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     border-radius: 10px 10px 10px 10px;
     position: relative;
     overflow: hidden;
@@ -1245,5 +1246,46 @@ body.timeline {
     #home h3 {
         font-size: 0.9em;
         letter-spacing: 0.8px;
+    }
+}
+
+/* Responsive Fixes */
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%; /* Ensure images are fully responsive */
+    height: auto;
+}
+
+.container, .row {
+    max-width: 100%; /* Prevent container overflow */
+}
+
+iframe {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio for embeds */
+}
+
+@media (max-width: 768px) {
+    .navbar-header {
+        margin-bottom: 10px;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    #about h2, #team h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+    .news-thumb img {
+        margin: 0 auto;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
     }
 }
