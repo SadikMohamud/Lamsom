@@ -1264,7 +1264,7 @@ img {
 }
 
 .container, .row {
-  max-width: 100%; /* Prevent container overflow */
+  max-width: auto; /* Prevent container overflow */
 }
 
 iframe {
