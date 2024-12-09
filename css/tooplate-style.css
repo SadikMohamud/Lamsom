@@ -538,42 +538,6 @@ line-height: 1.2;
   margin: 0;
 }
 
-/*---------------------------------------
-    TIME-LINE           
------------------------------------------*/
-
-body.timeline {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
-background-color: #ffff;
-position: relative;
-padding: 20px 0;
-width: 200px;
-}
-
-.timeline {
-position: relative;
-padding: 20px 0;
-width: 200px;
-}
-
-.timeline:before {
-content: '';
-position: absolute;
-top: 0;
-left: 50%;
-transform: translateX(-50%);
-width: 4px;
-height: 100%;
-background-color: #000;
-}
-
-
-
 /* General styles for the #History section */
 #History {
 background-color: #ffff; /* Subtle light gray background */
@@ -677,7 +641,7 @@ to {
   background-color: #f9f9f9;
   border-radius: 10px 10px 10px 10px;
   position: relative;
-   outline: 2px solid #3470b4;
+  outline: 2px solid #3470b4;
   overflow: hidden;
   cursor: none;
 }
